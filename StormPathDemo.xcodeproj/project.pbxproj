@@ -13,6 +13,12 @@
 		F20004281BC5815E00392F0D /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = F20004261BC5815E00392F0D /* Main.storyboard */; };
 		F200042A1BC5815E00392F0D /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = F20004291BC5815E00392F0D /* Assets.xcassets */; };
 		F200042D1BC5815E00392F0D /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = F200042B1BC5815E00392F0D /* LaunchScreen.storyboard */; };
+		F20004381BC6B5BD00392F0D /* SignUp.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = F20004371BC6B5BD00392F0D /* SignUp.storyboard */; settings = {ASSET_TAGS = (); }; };
+		F200043A1BC6B5D600392F0D /* SignIn.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = F20004391BC6B5D600392F0D /* SignIn.storyboard */; settings = {ASSET_TAGS = (); }; };
+		F200043D1BC6B67700392F0D /* SignInVC.m in Sources */ = {isa = PBXBuildFile; fileRef = F200043C1BC6B67700392F0D /* SignInVC.m */; settings = {ASSET_TAGS = (); }; };
+		F20004401BC6B6A600392F0D /* SignUpVC.m in Sources */ = {isa = PBXBuildFile; fileRef = F200043F1BC6B6A600392F0D /* SignUpVC.m */; settings = {ASSET_TAGS = (); }; };
+		F20004431BC6B74200392F0D /* Map.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = F20004421BC6B74200392F0D /* Map.storyboard */; settings = {ASSET_TAGS = (); }; };
+		F20004461BC6B76D00392F0D /* MapVC.m in Sources */ = {isa = PBXBuildFile; fileRef = F20004451BC6B76D00392F0D /* MapVC.m */; settings = {ASSET_TAGS = (); }; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -26,6 +32,15 @@
 		F20004291BC5815E00392F0D /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		F200042C1BC5815E00392F0D /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		F200042E1BC5815E00392F0D /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		F20004371BC6B5BD00392F0D /* SignUp.storyboard */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.storyboard; path = SignUp.storyboard; sourceTree = "<group>"; };
+		F20004391BC6B5D600392F0D /* SignIn.storyboard */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.storyboard; path = SignIn.storyboard; sourceTree = "<group>"; };
+		F200043B1BC6B67700392F0D /* SignInVC.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = SignInVC.h; sourceTree = "<group>"; };
+		F200043C1BC6B67700392F0D /* SignInVC.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = SignInVC.m; sourceTree = "<group>"; };
+		F200043E1BC6B6A600392F0D /* SignUpVC.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = SignUpVC.h; sourceTree = "<group>"; };
+		F200043F1BC6B6A600392F0D /* SignUpVC.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = SignUpVC.m; sourceTree = "<group>"; };
+		F20004421BC6B74200392F0D /* Map.storyboard */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.storyboard; path = Map.storyboard; sourceTree = "<group>"; };
+		F20004441BC6B76D00392F0D /* MapVC.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = MapVC.h; sourceTree = "<group>"; };
+		F20004451BC6B76D00392F0D /* MapVC.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = MapVC.m; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -58,8 +73,10 @@
 		F200041C1BC5815E00392F0D /* StormPathDemo */ = {
 			isa = PBXGroup;
 			children = (
-				F20004201BC5815E00392F0D /* AppDelegate.h */,
-				F20004211BC5815E00392F0D /* AppDelegate.m */,
+				F20004411BC6B6AD00392F0D /* Main Screen */,
+				F20004361BC6B54D00392F0D /* SignUp */,
+				F20004351BC6B53F00392F0D /* Signin */,
+				F20004341BC6B52E00392F0D /* Delegate */,
 				F20004231BC5815E00392F0D /* ViewController.h */,
 				F20004241BC5815E00392F0D /* ViewController.m */,
 				F20004261BC5815E00392F0D /* Main.storyboard */,
@@ -77,6 +94,45 @@
 				F200041E1BC5815E00392F0D /* main.m */,
 			);
 			name = "Supporting Files";
+			sourceTree = "<group>";
+		};
+		F20004341BC6B52E00392F0D /* Delegate */ = {
+			isa = PBXGroup;
+			children = (
+				F20004201BC5815E00392F0D /* AppDelegate.h */,
+				F20004211BC5815E00392F0D /* AppDelegate.m */,
+			);
+			name = Delegate;
+			sourceTree = "<group>";
+		};
+		F20004351BC6B53F00392F0D /* Signin */ = {
+			isa = PBXGroup;
+			children = (
+				F20004391BC6B5D600392F0D /* SignIn.storyboard */,
+				F200043B1BC6B67700392F0D /* SignInVC.h */,
+				F200043C1BC6B67700392F0D /* SignInVC.m */,
+			);
+			name = Signin;
+			sourceTree = "<group>";
+		};
+		F20004361BC6B54D00392F0D /* SignUp */ = {
+			isa = PBXGroup;
+			children = (
+				F20004371BC6B5BD00392F0D /* SignUp.storyboard */,
+				F200043E1BC6B6A600392F0D /* SignUpVC.h */,
+				F200043F1BC6B6A600392F0D /* SignUpVC.m */,
+			);
+			name = SignUp;
+			sourceTree = "<group>";
+		};
+		F20004411BC6B6AD00392F0D /* Main Screen */ = {
+			isa = PBXGroup;
+			children = (
+				F20004421BC6B74200392F0D /* Map.storyboard */,
+				F20004441BC6B76D00392F0D /* MapVC.h */,
+				F20004451BC6B76D00392F0D /* MapVC.m */,
+			);
+			name = "Main Screen";
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -137,8 +193,11 @@
 			buildActionMask = 2147483647;
 			files = (
 				F200042D1BC5815E00392F0D /* LaunchScreen.storyboard in Resources */,
+				F200043A1BC6B5D600392F0D /* SignIn.storyboard in Resources */,
 				F200042A1BC5815E00392F0D /* Assets.xcassets in Resources */,
+				F20004381BC6B5BD00392F0D /* SignUp.storyboard in Resources */,
 				F20004281BC5815E00392F0D /* Main.storyboard in Resources */,
+				F20004431BC6B74200392F0D /* Map.storyboard in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -151,6 +210,9 @@
 			files = (
 				F20004251BC5815E00392F0D /* ViewController.m in Sources */,
 				F20004221BC5815E00392F0D /* AppDelegate.m in Sources */,
+				F20004401BC6B6A600392F0D /* SignUpVC.m in Sources */,
+				F20004461BC6B76D00392F0D /* MapVC.m in Sources */,
+				F200043D1BC6B67700392F0D /* SignInVC.m in Sources */,
 				F200041F1BC5815E00392F0D /* main.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
